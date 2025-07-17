@@ -3,16 +3,3 @@ import "./Comment.less";
 ---
 
 <section class="vh-comment"><section><section class="vh-space-loading"><span></span><span></span><span></span></section></section></section>
-<script>
-	// 服务地址 URL
-	const WalineServerURL = "https://waline.blowswind.cn/";
-	// 评论组件 dom
-	const commentDOM = ".vh-comment";
-	document.addEventListener("astro:page-load", async () => {
-		if (!document.querySelector(commentDOM) || !WalineServerURL) return;
-		import("@waline/client/waline.css");
-		import("@waline/client/waline-meta.css");
-		const { init } = await import("@waline/client");
-		init({ el: commentDOM, serverURL: WalineServerURL });
-	});
-</script>
