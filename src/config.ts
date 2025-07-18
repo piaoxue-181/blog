@@ -12,7 +12,7 @@ export default {
   // 作者头像
   Avatar: 'https://q1.qlogo.cn/g?b=qq&nk=924592920&s=640',
   // 网站座右铭
-  Motto: '运气是计划之外的东西.',
+  Motto: '天上的星光漫漫，那是被夸父打碎的太阳.',
   // Cover 网站缩略图
   Cover: '/assets/images/banner/072c12ec85d2d3b5.webp',
   // 网站侧边栏公告 (不填写即不开启)
@@ -65,9 +65,9 @@ export default {
     // 仅支持 SVG 且 SVG 需放在 public/assets/images/svg/ 目录下，填入文件名即可 <不需要文件后缀名>（封装了 SVG 组件 为了极致压缩 SVG）
     // 建议使用 https://tabler.io/icons 直接下载 SVG
     { text: 'Github', link: 'https://github.com/piaoxue-181', icon: 'WebSite_github' },
-    { text: '韩小韩API', link: 'https://api.blowswind.cn', icon: 'WebSite_api' },
+    { text: '末雨乘风API', link: 'https://api.blowswind.cn', icon: 'WebSite_api' },
     { text: '每日热榜', link: 'https://hot.blowswind.cn', icon: 'WebSite_hot' },
-    { text: '骤雨重山图床', link: 'https://image.blowswind.cn', icon: 'WebSite_img' },
+    { text: '末雨乘风图床', link: 'https://image.blowswind.cn', icon: 'WebSite_img' },
     { text: 'HanAnalytics', link: 'https://analytics.blowswind.cn', icon: 'WebSite_analytics' },
   ],
   // 侧边栏展示
