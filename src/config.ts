@@ -2,7 +2,7 @@ export default {
   // 网站标题
   Title: '末雨乘风博客',
   // 网站地址
-  Site: 'https://www.blowswind.cn',
+  Site: 'https://blog.blowswind.cn',
   // 网站副标题
   Subtitle: '不曾与你分享的时间,我在进步.',
   // 网站描述
