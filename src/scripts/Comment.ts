@@ -37,9 +37,9 @@ const WalineFn = async (commentDOM: string, walineInit: any) => {
     imageUploader: async (file: any) => {
       const body = new FormData();
       body.append('file', file);
-      const res = await fetch("https://wp-cdn.4ce.cn/upload", { method: "POST", body });
+      const res = await fetch("https://image.blowswind.cn/upload", { method: "POST", body });
       const resJson = await res.json();
-      return resJson.data.link.replace('i.imgur.com', 'wp-cdn.4ce.cn/v2');
+      return resJson.data.link.replace('i.imgur.com', 'image.blowswind.cn/v2');
     }
   });
 }
