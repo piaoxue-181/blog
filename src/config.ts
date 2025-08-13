@@ -12,7 +12,7 @@ export default {
   // 作者头像
   Avatar: 'https://q1.qlogo.cn/g?b=qq&nk=924592920&s=640',
   // 网站座右铭
-  Motto: '运气是计划之外的东西.',
+  Motto: '天上的星光漫漫，那是被夸父打碎的太阳.',
   // Cover 网站缩略图
   Cover: '/assets/images/banner/072c12ec85d2d3b5.webp',
   // 网站侧边栏公告 (不填写即不开启)
