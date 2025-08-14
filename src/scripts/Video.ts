@@ -1,4 +1,4 @@
-import { LoadScript } from "@/utils/index";
+import { LoadScript, LoadStyle } from "@/utils/index";
 // 初始化视频播放器
 declare const DPlayer: any;
 declare const Hls: any;
@@ -9,6 +9,7 @@ export default async (videoList: any[]) => {
   // 载入依赖
   if (typeof Hls === "undefined") await LoadScript("https://registry.npmmirror.com/hls.js/1.5.20/files/dist/hls.min.js");
   await LoadScript("https://cdn.bootcdn.net/ajax/libs/dplayer/1.26.0/DPlayer.min.js");
+  await LoadStyle("https://cdn.jsdelivr.net/npm/dplayer/dist/DPlayer.min.css");
   videoDOM.forEach((i: any) => {
     const dp = new DPlayer({
       container: i,
@@ -30,6 +31,10 @@ export default async (videoList: any[]) => {
             }
           }
         }
+      },
+      danmaku: {
+        id: i.getAttribute("data-url") + "_blog",
+        api: "https://api-blog.blowswind.cn"
       }
     });
     videoList.push(dp);
