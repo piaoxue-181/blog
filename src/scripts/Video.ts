@@ -7,9 +7,9 @@ export default async (videoList: any[]) => {
   const videoDOM: any = document.querySelectorAll(".vh-node.vh-vhVideo");
   if (videoDOM.length === 0) return;
   // 载入依赖
-  if (typeof Hls === "undefined") await LoadScript("https://registry.npmmirror.com/hls.js/1.5.20/files/dist/hls.min.js");
-  await LoadScript("https://cdn.bootcdn.net/ajax/libs/dplayer/1.26.0/DPlayer.min.js");
-  await LoadStyle("https://cdn.jsdelivr.net/npm/dplayer/dist/DPlayer.min.css");
+  if (typeof Hls === "undefined") await LoadScript("/assets/js/hls.min.js");
+  await LoadScript("/assets/js/DPlayer.min.js");
+  await LoadStyle("/assets/css/DPlayer.min.css");
   videoDOM.forEach((i: any) => {
     const dp = new DPlayer({
       container: i,
