@@ -13,7 +13,7 @@ export default async (videoList: any[]) => {
   videoDOM.forEach((i: any) => {
     const dp = new DPlayer({
       container: i,
-      logo: "/assets/images/logo.png",
+      logo: "/favicon.ico",
       volume: 0.7,
       mutex: true,
       video: {
@@ -34,7 +34,7 @@ export default async (videoList: any[]) => {
       },
       danmaku: {
         id: i.getAttribute("data-url") + "_blog",
-        api: "https://api-blog.blowswind.cn"
+        api: "https://api-blog.blowswind.cn/"
       }
     });
     videoList.push(dp);
