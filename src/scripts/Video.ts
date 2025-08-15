@@ -33,7 +33,7 @@ export default async (videoList: any[]) => {
         }
       },
       danmaku: {
-        id: i.getAttribute("data-url") + "_blog",
+        id: i.getAttribute("data-url"),
         api: "https://api-blog.blowswind.cn/"
       }
     });
